@@ -28,6 +28,7 @@ This module add Ruby and optional Ruby on Rails support to Emacs.
 + =+lsp= Enables LangServer support for ruby. You must have =:tools lsp= enabled
   for this to work, as well as the langserver (solargraph) installed on your
   system.
++ =+steep= Use the steep LSP server instead of solargraph (requires =+lsp=).
 + =+rvm= Enables RVM (Ruby Version Manager) integration.
 + =+rbenv= Enables rbenv integration.
 + =+chruby= Enables chruby integration.

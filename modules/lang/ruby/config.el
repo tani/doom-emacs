@@ -34,6 +34,15 @@
         "[" #'ruby-toggle-block
         "{" #'ruby-toggle-block))
 
+(use-package! lsp-solargraph
+  :after lsp-mode
+  :when (featurep! +lsp)
+  :unless (or (featurep! :tools lsp +eglot) (featurep! +steep)))
+
+(use-package! lsp-steep
+  :after lsp-mode
+  :when (featurep! +steep)
+  :unless (featurep! :tools lsp +eglot))
 
 (use-package! robe
   :defer t
